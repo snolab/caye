@@ -1,0 +1,38 @@
+{
+  "name": "caye",
+  "version": "0.1.0",
+  "description": "Zero-refresh hot island replacement for live web production pages",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "caye": "./bin/caye.ts"
+  },
+  "scripts": {
+    "build": "bun build ./src/index.ts --outdir ./dist",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "hot-island",
+    "micro-frontend",
+    "live-view",
+    "hmr",
+    "production-hot-reload",
+    "ed25519"
+  ],
+  "author": "SnoMiao <snomiao@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snolab/caye.git"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "typescript": "^5.7.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  }
+}
