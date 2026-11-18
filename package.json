@@ -11,7 +11,7 @@
   "scripts": {
     "build": "bun build ./src/index.ts --outdir ./dist",
     "test": "bun test",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsrs --noEmit"
   },
   "keywords": [
     "hot-island",
@@ -30,7 +30,8 @@
   "devDependencies": {
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "tsrs": "0.25.0-ts7.1.0-beta"
   },
   "peerDependencies": {
     "react": ">=18.0.0"
